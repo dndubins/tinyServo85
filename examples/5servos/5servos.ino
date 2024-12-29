@@ -1,4 +1,4 @@
-// 3servos.ino: Example sketch for tinyServo85
+// 5servos.ino: Example sketch for tinyServo85
 // tinyServo85.h version 1.0.0
 // Author: D. Dubins
 // Date: 29-Dec-24
