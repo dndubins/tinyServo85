@@ -1,4 +1,4 @@
-// 5servos.ino: Example sketch for tinyServo85
+// 3servos.ino: Example sketch for tinyServo85
 // tinyServo85.h version 1.0.0
 // Author: D. Dubins
 // Date: 29-Dec-24
@@ -48,8 +48,8 @@ void loop() {
   delay(1000);
 
   // Uncomment to rock all servos smoothly using moveTo(), with a 10ms delay between steps:
-  //moveTo(0, 0, 0, 10);
-  //moveTo(SVOMAXANGLE, SVOMAXANGLE, SVOMAXANGLE, 10);
+  //moveTo(0, 0, 0, 0, 0, 10);
+  //moveTo(SVOMAXANGLE, SVOMAXANGLE, SVOMAXANGLE, SVOMAXANGLE, SVOMAXANGLE, 10);
   
   // Uncomment to rock servo 1 slowly
   /*for (int i = 0; i < SVOMAXANGLE; i++) {
@@ -70,10 +70,10 @@ void loop() {
   }*/
 }
 
-void moveTo(int s0, int s1, int s2, int wait) {  // routine for controlling all servos slowly, simultaneously.
+void moveTo(int s0, int s1, int s2, int s3, int s4, int wait) {  // routine for controlling all servos slowly, simultaneously.
   // wait=0: as fast as possible.
   // Note: Change structure of moveTo arguments to match # servos (add coordinates s3, s4 ... as needed).
-  int loc[NSERVO] = { s0, s1, s2 };  // create array for loc’ns
+  int loc[NSERVO] = { s0, s1, s2, s3, s4 };  // create array for loc’ns
   static int pos[NSERVO];            // remembers last value of pos
   if (wait == 0) {                   // if wait=0, move as fast as possible
     for (int i = 0; i < NSERVO; i++) {
