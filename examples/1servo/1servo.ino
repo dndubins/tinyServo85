@@ -1,5 +1,5 @@
 // 1servo.ino: Example sketch for tinyServo85
-// tinySero85 version 1.0.0
+// tinyServo85 version 1.0.0
 // Author: D.Dubins
 // Date: 29-Dec-24
 // Controlling 1 servo on any digital pin from PB0 to PB4 on ATtiny85 (clock frequency=16MHz)
