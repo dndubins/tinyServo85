@@ -1,5 +1,5 @@
 // 5servos.ino: Example sketch for tinyServo85
-// tinyServo85.h version 1.0.0
+// tinyServo85 version 1.0.0
 // Author: D. Dubins
 // Date: 29-Dec-24
 // Controlling 5 servos from PB0 to PB4 on ATtiny85 (clock frequency=16MHz)
