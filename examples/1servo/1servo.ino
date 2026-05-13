@@ -33,7 +33,7 @@ void loop() {
   // Uncomment the timeout check below for disabling Timer1, if the servos don't receive a command after
   // SVOTIMEOUT msec. This servo_timeout_check() is optional. Temporarily turning off Timer1 will free
   // the mcu to do other things. You can also manually suspend Timer1 with the command "myServos.disableTimerInterrupt();".
-  myServos.servo_timeout_check();  // if servos are inactive, stop Timer1 (less trouble for other routines)
+  myServos.servo_timeout_check(SVOTIMEOUT);  // if servos are inactive, stop Timer1 (less trouble for other routines)
   
   // Uncomment for rocking motor1 at full speed.
   myServos.setServo(motor1, 0);
