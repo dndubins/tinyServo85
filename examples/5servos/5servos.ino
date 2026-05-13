@@ -1,5 +1,5 @@
 // 5servos.ino: Example sketch for tinyServo85
-// tinyServo85 version 1.0.1
+// tinyServo85 version 1.0.2
 // Author: D. Dubins
 // Date: 29-Dec-24
 // Last Updated: 13-May-26
