@@ -124,8 +124,8 @@ void tinyServo85::disableTimerInterrupt() {
   tinyServo85::timer1_enabled = false;
 }
 
-void tinyServo85::servo_timeout_check() {  // check to shut down Timer1 after SVOTIMEOUT msec have elapsed since last servo move
-  if (((millis() - tinyServo85::servo_tLast) > SVOTIMEOUT) && tinyServo85::timer1_enabled) {
+void tinyServo85::servo_timeout_check(unsigned long dur) {  // check to shut down Timer1 after SVOTIMEOUT msec have elapsed since last servo move
+  if (((millis() - tinyServo85::servo_tLast) > dur) && tinyServo85::timer1_enabled) {
     tinyServo85::disableTimerInterrupt();  // disable Timer1
   }
 }
