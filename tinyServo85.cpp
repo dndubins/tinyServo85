@@ -5,7 +5,7 @@
 // Transferability: This library is only designed to work on the ATtiny85.
 // Author: D.Dubins
 // Date: 29-Dec-24
-// Last Updated: 29-Dec-24
+// Last Updated: 13-May-26
 //
 // The library maps specific servo numbers to the following pins:
 // servo 0: PB0
