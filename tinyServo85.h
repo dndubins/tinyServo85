@@ -3,11 +3,21 @@
 
 #include <Arduino.h>
 
+#ifndef NSVO
 #define NSVO 5            // number of servos to control (up to 5)
+#endif
+
+#ifndef SVOMAXANGLE
 #define SVOMAXANGLE 179   // maximum angle for servo.
+#endif
+
+#ifndef SVOMINPULSE
 #define SVOMINPULSE 504   // minimum pulse width in microseconds for servo signal (0 degrees)
+#endif
+
+#ifndef SVOMAXPULSE
 #define SVOMAXPULSE 2485  // maximum pulse width in microseconds for servo signal (for maximum angle)
-#define SVOTIMEOUT 500    // timeout in ms to disable servos.
+#endif
 
 class tinyServo85 {
   public:
@@ -19,7 +29,7 @@ class tinyServo85 {
     void setCTC();
     void enableTimerInterrupt();
     void disableTimerInterrupt();
-    void servo_timeout_check();
+    void servo_timeout_check(unsigned long dur); // to timeout the servos
     static unsigned int servo_PWs[NSVO]; // Pulse widths in microseconds
     static bool servo_attached[NSVO];    // Servo attachment status
 	static volatile bool pinStates[NSVO];       // to store pin states
