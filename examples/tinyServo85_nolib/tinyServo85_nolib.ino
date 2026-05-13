@@ -7,7 +7,7 @@
 // non-PWM pins of other MCUs as well.
 // Author: D.Dubins
 // Date: 29-Dec-24
-// Last Updated: 29-Dec-24
+// Last Updated: 13-May-26
 //
 // Notes: I have a potentiometer wired as a voltage divider on pin PB2. This would conflict with the sketch if 8 servos
 // are attached.
