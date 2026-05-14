@@ -4,19 +4,19 @@
 #include <Arduino.h>
 
 #ifndef NSVO
-#define NSVO 5            // number of servos to control (up to 5)
+ #define NSVO 5            // number of servos to control (up to 5)
 #endif
 
 #ifndef SVOMAXANGLE
-#define SVOMAXANGLE 179   // maximum angle for servo.
+ #define SVOMAXANGLE 179   // maximum angle for servo.
 #endif
 
 #ifndef SVOMINPULSE
-#define SVOMINPULSE 504   // minimum pulse width in microseconds for servo signal (0 degrees)
+ #define SVOMINPULSE 504   // minimum pulse width in microseconds for servo signal (0 degrees)
 #endif
 
 #ifndef SVOMAXPULSE
-#define SVOMAXPULSE 2485  // maximum pulse width in microseconds for servo signal (for maximum angle)
+ #define SVOMAXPULSE 2485  // maximum pulse width in microseconds for servo signal (for maximum angle)
 #endif
 
 class tinyServo85 {
